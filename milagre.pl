@@ -42,20 +42,3 @@ min([_|R],M,Min) :- min(R,M,Min).
   ?- shortest(1,5,Path,Length).
 
 */
-
-# conectado(X,Y,L,K) :- pode_ir(X,Y,L,K) ; pode_ir(Y,X,L,K).
-
-
-# caminho(A,B,Path,Len) :-
-#        trajeto(A,B,[A],Q,Len), 
-#        reverse(Q,Path).
-
-# trajeto(A,B,P,[B|P],L) :- 
-#        conectado(A,B,L,_).
-
-# trajeto(A,B,Visited,Path,L) :-
-#        conectado(A,C,D,_),           
-#        C \== B,
-#        \+member(C,Visited),
-#        trajeto(C,B,[C|Visited],Path,L1),
-#        L is D+L1.  
