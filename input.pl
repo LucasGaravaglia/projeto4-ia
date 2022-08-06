@@ -1,0 +1,12 @@
+pode_ir(a,b,1,linha1).
+pode_ir(a,c,3.5,linha4).
+pode_ir(a,g,2.5,linha1).
+pode_ir(b,d,1,linha1).
+pode_ir(b,f,2.5,linha1).
+pode_ir(b,j,1,linha1).
+pode_ir(c,d,2.2,linha1).
+pode_ir(c,e,1,linha5).
+pode_ir(d,f,2,linha2).
+pode_ir(d,h,4,linha2).
+pode_ir(e,f,1.1,linha2).
+pode_ir(e,i,3.2,linha6).
