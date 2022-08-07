@@ -3,20 +3,23 @@ Aluno: Lucas Garavaglia
 Para a execução pro programa pasta executar o arquivo p4.pl.
 O arquivo de entrada deve ter o formato de um arquivo prolog e a extensão .pl.
 
-Para saber quais estações o trem irá passar, juntamente com suas 
-respectivas distancias, basta digitar: 
-exibeCaminho(X,Y,Len).
-X: Estação origem
-Y: Estação destino
-Len: Distancia total
 
-Para saber em quais linhas o trem irá passar, basta digitar:
-X: Estação origem
-Y: Estação destino
-linhas(X,Y).
+Para saber em quais estações, linhas e a distancia da estação o trem vai passar
+basta digitar: 
+X: Deve colocar a estação de origem desejada.
+Y: Deve colocar a estação de destino desejada.
+Dist: Distancia total.
+Cam: Caminho percorrido.
+Linhas: Linhas percorridas.
+caminho(X,Y,Dist,Cam,Linhas).
 
-
-Para saber qual o menor caminho entre duas estações, basta digitar:
-X: Estação origem
-Y: Estação destino
-menorCaminho(X,Y).
+exemplo de uso para o arquivo input.pl:
+caminho(a,h,Dist,Cam,Linhas).
+saida:
+Dist = 6,
+Cam = [a, b, d, h],
+Linhas = [linha1, linha4, linha10] ;
+Dist = 9.7,
+Cam = [a, c, d, h],
+Linhas = [linha2, linha7, linha10] ;
+false.
