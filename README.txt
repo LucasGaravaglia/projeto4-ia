@@ -1,6 +1,7 @@
 Aluno: Lucas Garavaglia
 
-Para a execução pro programa pasta executar o arquivo p4.pl.
+Para a execução do programa basta executar o arquivo p4.pl.
+No Linux: swipl p4.pl.
 O arquivo de entrada deve ter o formato de um arquivo prolog e a extensão .pl.
 
 
